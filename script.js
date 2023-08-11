@@ -9,10 +9,20 @@ let parrafoElemento = document.getElementById('parrafo')
 // Agregar un evento Click a cada enlace 
 enlaces.forEach(function(enlace) {
     enlace.addEventListener('click', function() {
+
         // Remover el Activo
+        enlaces.forEach(function (enlace) {
+            enlace.classList.remove('active');
+        });
+
+        // Agregar activo
+        this.classList.add('active')
+
+        // Obtener contenido
+        
+
     })
 
-    // Agregar activo
 });
 
 // Función para traer Info
