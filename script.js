@@ -19,9 +19,14 @@ enlaces.forEach(function(enlace) {
         this.classList.add('active')
 
         // Obtener contenido
-        
+        let contenido = obtenerContenido(this.textContent)
 
-    })
+        // Mostrar contenido
+        tituloElemento.innerHTML = contenido.titulo
+        subTituloElemento.innerHTML = contenido.subtitulo
+        parrafoElemento.innerHTML = contenido.parrafo
+
+    });
 
 });
 
