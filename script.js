@@ -25,9 +25,7 @@ enlaces.forEach(function(enlace) {
         tituloElemento.innerHTML = contenido.titulo
         subTituloElemento.innerHTML = contenido.subtitulo
         parrafoElemento.innerHTML = contenido.parrafo
-
     });
-
 });
 
 // Función para traer Info
@@ -39,6 +37,5 @@ function obtenerContenido(enlace) {
         'París' : paris,
         'Londres' : londres
     };
-
     return contenido[enlace];
 };
